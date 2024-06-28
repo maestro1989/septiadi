@@ -12,13 +12,6 @@ def main() :
 if __name__ == '__main__' : 
   main()
 
-
-#read json file dari data covid 
-flight_passanger_api = requests.post('https://forecastpassengerapi.herokuapp.com/forecast_timeseries',json={
-  "month_limit": "2020-01-01",
-  "window_size": 12
-}).json()
-
 def main() : 
   st.header('Halaman Streamlit Septiadi')
   st.subheader('Ini Sub Judul')
