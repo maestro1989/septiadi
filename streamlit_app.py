@@ -1,7 +1,10 @@
 import streamlit as st 
 import pandas as pd 
-import requests
-from st_aggrid import AgGrid
+#import requests
+#from st_aggrid import AgGrid
+
+#baca dataframe dari file csv 
+house = pd.read_csv('house_clean.csv')
 
 def main() : 
   st.write('Minimal Example')
@@ -9,8 +12,7 @@ def main() :
 if __name__ == '__main__' : 
   main()
 
-#baca dataframe dari file csv 
-house = pd.read_csv('house_clean.csv')
+
 #read json file dari data covid 
 flight_passanger_api = requests.post('https://forecastpassengerapi.herokuapp.com/forecast_timeseries',json={
   "month_limit": "2020-01-01",
