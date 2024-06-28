@@ -31,12 +31,16 @@ def main() :
   #st.write('Contoh dataframe dengan AgGrid')
   #AgGrid (house)
   #st.table([x for x in range(1,5)])
-  #matplotlib chart 
-  fig,ax = plt.subplots()
-  plt.scatter(house['price'],house['bedrooms'])
-  st.pyplot(fig)
-  plotly_fig = px.scatter(house['price'],house['bedrooms'])
-  st.plotly_chart(plotly_fig)
+  click_me_btn = st.button('Click Me')
+  st.write(click_me_btn) #Return True kalo di Click 
+  check_btn = st.checkbox('Klik Jika Setuju')
+  if check_btn :
+      st.write('Anda Setuju')
+  radio_button= st.radio('Choose below',[x for x in range(1,3)])
+  st.write('Anda Memilih',radio_button)
+  #slider 
+  age_slider = st.slider('Berapa Usia Anda',0,100)
+  st.write('Usia Anda',age_slider)
 if __name__ == '__main__' : 
     main()
 
