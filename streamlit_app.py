@@ -1,7 +1,7 @@
 import streamlit as st 
 import pandas as pd 
 #import requests
-#from st_aggrid import AgGrid
+from st_aggrid import AgGrid
 
 #baca dataframe dari file csv 
 house = pd.read_csv('house_clean.csv')
@@ -26,7 +26,8 @@ def main() :
   st.write('Contoh dataframe')
   st.dataframe(house)
   st.metric(label="Temperature", value="70 °F", delta="-1.2 °F")
-
+  st.write('Contoh dataframe dengan AgGrid')
+  AgGrid (house)
 
 
 
