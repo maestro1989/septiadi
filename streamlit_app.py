@@ -24,7 +24,7 @@ if __name__ == '__main__' :
 
 def main() : 
   st.write('Contoh dataframe')
-  st.dataframe(house_clean)
+  st.dataframe(house)
   st.write('Contoh JSON')
   st.json(flight_passanger_api)
   st.write('Metrics')
