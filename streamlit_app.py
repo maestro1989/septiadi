@@ -31,14 +31,12 @@ def main() :
   #st.write('Contoh dataframe dengan AgGrid')
   #AgGrid (house)
   #st.table([x for x in range(1,5)])
-
-def main() : 
-    #matplotlib chart 
-    fig,ax = plt.subplots()
-    plt.scatter(house['price'],house['bedrooms'])
-    st.pyplot(fig)
-    plotly_fig = px.scatter(house['price'],house['bedrooms'])
-    st.plotly_chart(plotly_fig)
+  #matplotlib chart 
+  fig,ax = plt.subplots()
+  plt.scatter(house['price'],house['bedrooms'])
+  st.pyplot(fig)
+  plotly_fig = px.scatter(house['price'],house['bedrooms'])
+  st.plotly_chart(plotly_fig)
 if __name__ == '__main__' : 
     main()
 
