@@ -9,7 +9,7 @@ if __name__ == '__main__' :
 def main() : 
   st.header('Ini Judul')
   st.subheader('Ini Sub Judul')
-  st.markdown('# Rendering Markdown ')
+  st.markdown('### Rendering Markdown ')
   st.write('Some Phytagorean Equation : ')
   st.latex('c^2 = a^2+b^2')
 
