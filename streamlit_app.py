@@ -28,9 +28,9 @@ def main() :
   st.write('Contoh dataframe')
   st.dataframe(house)
   st.metric(label="Temperature", value="70 °F", delta="-1.2 °F")
-  st.write('Contoh dataframe dengan AgGrid')
+  #st.write('Contoh dataframe dengan AgGrid')
   #AgGrid (house)
-  st.table([x for x in range(1,5)])
+  #st.table([x for x in range(1,5)])
 
 def main() : 
     #matplotlib chart 
