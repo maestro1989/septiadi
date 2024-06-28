@@ -31,7 +31,7 @@ def main() :
   # Menampilkan metrik ketiga tanpa delta
   st.metric(label="Humidity", value="85%")
   # Menampilkan metrik dengan warna delta disesuaikan
-  st.metric(label="Stock Price", value="$300", delta="-5%", delta_color="inverse")
+  st.metric(label="Stock Price", value="$300", delta="-5%", delta_color="normal")
 
 
 
