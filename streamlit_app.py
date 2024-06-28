@@ -3,10 +3,7 @@ import streamlit as st
 def main() : 
   st.write('Minimal Example')
 
-if __name__ == '__main__' : 
-  main()
-
-def maingame() : 
+def main() : 
   st.header('Ini Judul')
   st.subheader('Ini Sub Judul')
   st.markdown('# Rendering Markdown ')
@@ -14,4 +11,4 @@ def maingame() :
   st.latex('c^2 = a^2+b^2')
 
 if __name__ == '__main__' : 
-  maingame()
+  main()
