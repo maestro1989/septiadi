@@ -7,7 +7,7 @@ if __name__ == '__main__' :
   main()
 
 def main() : 
-  st.header('Ini Judul')
+  st.header('Halaman Streamlit Septiadi')
   st.subheader('Ini Sub Judul')
   st.markdown('### Rendering Markdown ')
   st.write('Some Phytagorean Equation : ')
